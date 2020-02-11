@@ -7,14 +7,14 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
 (function download(data, extension){
 	 data =  'abc';
-  extension = 'xlsx';
+  extension = 'pdf';
 	console.log("extension   "+extension);
 	console.log("data   "+data);
-    var exportedFilenmae = 'report.xlsx';
+    var exportedFilenmae = 'report.pdf';
     console.log("exportedFilenmae   "+exportedFilenmae);
     var mimeType;
     if(extension ==='pdf'){
-    mimeType = {type:'application/pdf;charset=utf-8'}
+    mimeType = {type:'application/pdf'}
     } else if (extension === 'rtf'){
      mimeType = {type:'application/vnd.ms-word;charset=utf-8'}
     }
