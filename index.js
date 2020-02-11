@@ -7,21 +7,21 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
 (function download(data, extension){
 	 data =  'abc';
-  extension = 'pdf';
+  extension = 'xlsx';
 	console.log("extension   "+extension);
 	console.log("data   "+data);
-    var exportedFilenmae = 'report.'+extension;
+    var exportedFilenmae = 'report.xlsx';
     console.log("exportedFilenmae   "+exportedFilenmae);
     var mimeType;
     if(extension ==='pdf'){
     mimeType = {type:'application/pdf;charset=utf-8'}
     } else if (extension === 'rtf'){
-     mimeType = {type:'application/msword;charset=utf-8'}
+     mimeType = {type:'application/vnd.ms-word;charset=utf-8'}
     }
      else if (extension === 'csv'){
      mimeType = {type:'text/csv;charset=utf-8'}
     }else if (extension === 'xlsx'){
-     mimeType = {type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=utf-8'}
+     mimeType = {type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}
     }
     //{
   //  type: 'text/'+extension+';charset=utf-8;'
